@@ -1,0 +1,178 @@
+<!--Code Ninjas | Jackson Hagood-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Position</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="icon" href="images/icon.png">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="sidenav">
+        <a href="functions.html"><h2>GDP Functions</h2></a>
+        <br>
+        <h2><a href="position.html">Position</a></h2>
+        <ul id="contents">
+            <li><a href="#xyz">.x() .y() and .z()</a></li>
+            <li><a href="#getpointerpos">getPointerPos()</a></li>
+            <li><a href="#movexy">moveX() and moveY()</a></li>
+            <li><a href="#moveforward">.moveForward()</a></li>
+            <li><a href="#moveforwardbyrotation">.moveForwardByRotation()</a></li>
+            <li><a href="#moveto">.moveTo()</a></li>
+            <li><a href="#speedxy">.speedX() and .speedY()</a></li>
+            <li><a href="#finddistance">.findDistance()</a></li>
+        </ul>
+        <h2><a href="rotation.html">Rotation</a></h2>
+        <h2><a href="scale.html">Scale</a></h2>
+        <h2><a href="collision.html">Collision</a></h2>
+        <h2><a href="appearance.html">Appearance</a></h2>
+        <h2><a href="timers.html">Timers</a></h2>
+        <h2><a href="animation.html">Animation</a></h2>
+        <h2><a href="attributes.html">Attributes</a></h2>
+        <h2><a href="miscellaneous.html">Miscellaneous</a></h2>
+    </div>
+    <div name="Position"> <!--done-->
+        <h1>Position</h1>
+      
+        <div class="item"> <!--done-->
+            <a name="xyz">
+            <h3>.x() .y() and .z()</h3>
+            <p>The functions .x(), .y(), and .z() will seperate a position into its components. These functions can also change the position of an object. Each function can take in an integer as a parameter, which will become the object's new position on its respective axis. Of note is that within the GDP, and in most development applications, the x and y axis are set up differently than one may originally think. The origin lies on the top left of the screen, and while x does increase rightward, y increases downward. The z axis refers to the layer an item is on. In other words, it is used to manage whether something is displayed in front of, or behind something.</p>
+            <pre><code>xComp = position.x();    
+//sets 'xComp' to the x value of 'position' using the .x() function
+object.y(10);
+//moves the 'object' to the y coordinate of 10, using the .y() function</code></pre>
+           <h4>See Further:</h4>
+            <ol class="more">
+                <li>Coordinate Collector</li>
+                <li><a href="http://ptgmedia.pearsoncmg.com/images/chap3_0672324989/elementLinks/03fig01.jpg">XY Explination</a></li>
+            </ol>
+            </a>
+        </div>
+        
+        <br>
+        
+        <div class="item"> <!--done-->
+            <a name="getpointerpos">
+            <h3>getPointerPos()</h3>
+            <p>The function .getPointerPos() will return the mouse cursor's position. This position contains both x and y components. Further, this position can be stored into a variable, and separated into these components. The function takes no parameters.</p>
+            <pre><code>var pos = getPointerPos();    
+//calls the getPointerPos() function, and stores the returned position into the
+//'pos' variable
+xComp = pos.x();
+yComp = pos.y();
+//stores the x and y components of the 'pos' variable into 'xComp' and 'yComp' 
+//This is done through .x() and .y() functions</code></pre>
+           <h4>See Further:</h4>
+            <ol class="more">
+                <li>Coordinate Collector</li>
+                <li>Star Spinner</li>
+            </ol>
+            </a>
+        </div>
+        
+        <br>
+        
+        <div class="item"> <!--done-->
+            <a name="movexy">
+            <h3>moveX() and moveY()</h3>
+            <p>The functions moveX() and moveY() can be used to move an object along an axis. The function can take in two parameters, the first being the object, the second being the speed. The speed can be negative or positive, depending on the desired direction. If a speed parameter is not given, then either .speedX() or .speedY() will be called as a default speed for the object.</p>
+            <pre><code>moveX(object,10);    
+//moves 'object' with a speed of 10 along the x axis
+moveY(object);
+//moves 'object' with a speed of speedY() along the y axis</code></pre>
+           <h4>See Further:</h4>
+            <ol class="more">
+                <li>Side Wall Bounce</li>
+                <li>Rain Catcher Part 1</li>
+            </ol>
+            </a>
+        </div>
+        
+        <br>
+        
+        <div class="item"> <!--done-->
+            <a name="moveforward">
+            <h3>.moveForward()</h3>
+            <p>The function .moveForward() will move an object in the direction it is facing. Of note is that this function only works if the object is pointing in one of the eight main cardinal directions. The function takes in one parameter, a speed.</p>
+            <pre><code>object.moveForward(10);    
+//moves the 'object' forward with a speed of 10</code></pre>
+           <h4>See Further:</h4>
+            <ol class="more">
+                <li>Rain Catcher Part 6</li>
+                <li>Color Picker</li>
+            </ol>
+            </a>
+        </div>
+        
+        <br>
+        
+        <div class="item"> <!--done-->
+            <a name="moveforwardbyrotation">
+            <h3>.moveForwardByRotation()</h3>
+            <p>The function .moveForwardByRotation() will move an object in the direction it is facing. Unlike .moveForward(), this function moves the object in any direction that it is facing. The function takes in one parameter, a speed.</p>
+            <pre><code>object.moveForwardByRotation(10);    
+//moves the 'object' forward with a speed of 10
+//'object' moves forward in the precise direction it is facing</code></pre>
+           <h4>See Further:</h4>
+            <ol class="more">
+                <li>Rain Catcher Part 6</li>
+                <li>Color Picker</li>
+            </ol>
+            </a>
+        </div>
+        
+        <br>
+        
+        <div class="item"> <!--done-->
+            <a name="moveto">
+            <h3>.moveTo()</h3>
+            <p>The function .moveTo will move an object to a given position or object. The function can take two parameters, in the form of an x and y coordinate, or one parameter, the destination object.</p>
+            <pre><code>object.moveTo(25,50);    
+//moves the 'object' to the coordinate (25,50)
+object.moveTo(object2);
+//moves the 'object' to 'object2'</code></pre>
+           <h4>See Further:</h4>
+            <ol class="more">
+                <li>Ninja Snacks</li>
+                <li>Shuriken Toss Part 1</li>
+            </ol>
+            </a>
+        </div>
+        
+        <br>
+        
+        <div class="item">
+            <a name="speedxy">
+            <h3>.speedX() and .speedY()</h3>
+            <p>The functions .speedX() and .speedY() contain an object's default speed value. Other functions, such as moveX() and moveY(), will use the speed contained within the corresponding speed function, if no parameter is passed through. speedX() and speedY() take in a single parameter as a speed.</p>
+            <pre><code>object.speedX(10);
+//sets the x speed of 'object' to 10</code></pre>
+           <h4>See Further:</h4>
+            <ol class="more">
+                <li>Side Wall Bounce</li>
+                <li>Laser Beam Pointer</li>
+            </ol>
+            </a> <!--done-->
+        </div>
+        
+        <br>
+        
+        <div class="item">
+            <a name="finddistance">
+            <h3>.findDistance()</h3>
+            <p>The function .findDistance() will return the distance between two objects. The function takes just one parameter, the object which the distance to is being found.</p>
+            <pre><code>var dis = object.findDistance(object2);    
+//sets variable 'dis' to the distance between 'object' and 'object2'</code></pre>
+           <h4>See Further:</h4>
+            <ol class="more">
+                <li>Measurements</li>
+                <li>Ninja Puzzle</li>
+            </ol>
+            </a> <!--done-->
+        </div>
+    </div>
+</body>
+</html>

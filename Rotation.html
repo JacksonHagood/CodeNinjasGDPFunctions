@@ -1,0 +1,132 @@
+<!--Code Ninjas | Jackson Hagood-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rotation</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="icon" href="images/icon.png">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="sidenav">
+        <a href="functions.html"><h2>GDP Functions</h2></a>
+        <br>
+        <h2><a href="position.html">Position</a></h2>
+        <h2><a href="rotation.html">Rotation</a></h2>
+        <ul id="contents">
+            <li><a href="#spin">spin()</a></li>
+            <li><a href="#rotation">.rotation()</a></li>
+            <li><a href="#flipdirection">.flipDirection()</a></li>
+            <li><a href="#pointto">.pointTo()</a></li>
+            <li><a href="#pointtocursor">.pointToCursor()</a></li>
+            <li><a href="#pointtoobject">.pointToObject()</a></li>
+        </ul>
+        <h2><a href="scale.html">Scale</a></h2>
+        <h2><a href="collision.html">Collision</a></h2>
+        <h2><a href="appearance.html">Appearance</a></h2>
+        <h2><a href="timers.html">Timers</a></h2>
+        <h2><a href="animation.html">Animation</a></h2>
+        <h2><a href="attributes.html">Attributes</a></h2>
+        <h2><a href="miscellaneous.html">Miscellaneous</a></h2>
+    </div>
+    <div name="Rotation"> <!--done-->
+        <h1>Rotation</h1>
+
+        <div class="item"> <!--done-->
+            <a name="spin">
+            <h3>spin()</h3>
+            <p>The function spin() will spin an object with a specified speed. spin() takes in two parameters, an object and a speed. As always, this speed can be negative, for opposite rotation.</p>
+            <pre><code>spin(object,10);    
+//spins 'object' with a speed of 10</code></pre>
+           <h4>See Further:</h4>
+            <ol class="more">
+                <li>Spin a Star</li>
+                <li>Spin Counter-Clockwise</li>
+                <li>Star Spinner</li>
+            </ol>
+            </a>
+        </div>
+
+        <br>
+        
+        <div class="item"> <!--done-->
+            <a name="rotation">
+            <h3>.rotation()</h3>
+            <p>The function .rotation() will set an object's rotation. The function makes use of the rotation attribute, that can be found within the properties menu. The function .rotation() takes in one parameter, the degree in which an object will be rotated. Of note, is the amount of degrees in a full circle is 360.</p>
+            <pre><code>object.rotation(10);    
+//sets the rotation of the object to 10 degrees</code></pre>
+           <h4>See Further:</h4>
+            <ol class="more">
+                <li>Wall Blaster 2</li>
+                <li><a href="https://www.mathsisfun.com/geometry/images/degrees-360.gif">Degrees in Circle</a></li>
+            </ol>
+            </a>
+        </div>
+
+        <br>
+        
+        <div class="item"> <!--done-->
+            <a name="flipdirection">
+            <h3>.flipDirection()</h3>
+            <p>The function .flipDirection() will turn an object to the opposite direction. The function takes in no parameters, it will simply just rotate the object 180 degrees from where it is currently facing.</p>
+            <pre><code>object.flipDirection();    
+//flips 'object' to the opposite direction</code></pre>
+           <h4>See Further:</h4>
+            <ol class="more">
+                <li>Bumper Car</li>
+                <li>Balloon Project</li>
+            </ol>
+            </a>
+        </div>
+
+        <br>
+        
+        <div class="item"> <!--done-->
+            <a name="pointto">
+            <h3>.pointTo()</h3>
+            <p>The function .pointTo() will point an object in the direction of a coordinate. The function takes in two parameters, the x and y coordinates of a position.</p>
+            <pre><code>object.pointTo(10,10);    
+//points 'object' to the direction of (10,10)</code></pre>
+           <h4>See Further:</h4>
+            <ol class="more">
+                <li>Shuriken Toss Part 2</li>
+            </ol>
+            </a>
+        </div>
+        
+        <br>
+        
+        <div class="item"> <!--done-->
+            <a name="pointtocursor">
+            <h3>.pointToCursor()</h3>
+            <p>The function .pointToCursor() will point an object in the direction of the mouse pointer. The function takes in no parameters.</p>
+            <pre><code>object.pointToCursor();    
+//points 'object' in the direction of the mouse pointer</code></pre>
+           <h4>See Further:</h4>
+            <ol class="more">
+                <li>Shuriken Toss Part 2</li>
+            </ol>
+            </a>
+        </div>
+
+        <br>
+        
+        <div class="item"> <!--done-->
+            <a name="pointtoobject">
+            <h3>.pointToObject()</h3>
+            <p>The function .pointToObject() will point an object in the direction of another item. The function takes in one parameter, the destination object.</p>
+            <pre><code>object.pointToObject(object2);    
+//points 'object' in the direction of 'object2'</code></pre>
+           <h4>See Further:</h4>
+            <ol class="more">
+                <li>Ninja Battle</li>
+            </ol>
+            </a>
+        </div>
+
+        <br>
+    </div>
+</body>
+</html>

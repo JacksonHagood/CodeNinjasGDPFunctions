@@ -1,0 +1,82 @@
+<!--Code Ninjas | Jackson Hagood-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Collision</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="icon" href="images/icon.png">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="sidenav">
+        <a href="functions.html"><h2>GDP Functions</h2></a>
+        <br>
+        <h2><a href="position.html">Position</a></h2>
+        <h2><a href="rotation.html">Rotation</a></h2>
+        <h2><a href="scale.html">Scale</a></h2>
+        <h2><a href="collision.html">Collision</a></h2>
+        <ul id="contents">
+            <li><a href="#istouching">.isTouching()</a></li>
+            <li><a href="#toggledraggable">.toggleDraggable()</a></li>
+            <li><a href="#draggable">.draggable()</a></li>
+        </ul>
+        <h2><a href="appearance.html">Appearance</a></h2>
+        <h2><a href="timers.html">Timers</a></h2>
+        <h2><a href="animation.html">Animation</a></h2>
+        <h2><a href="attributes.html">Attributes</a></h2>
+        <h2><a href="miscellaneous.html">Miscellaneous</a></h2>
+    </div>
+    <div name="Collision"> <!--done-->
+        <h1>Collision</h1>
+        
+        <div class="item"> <!--done-->
+            <a name="istouching">
+            <h3>.isTouching()</h3>
+            <p>The function .isTouching() will return whether or not and object is in contact with another item. The function takes in one parameter, the object that is being detected.</p>
+            <pre><code>var bool = object.isTouching(object2);    
+//sets variable 'bool' to whether or not 'object' is touching 'object2'</code></pre>
+           <h4>See Further:</h4>
+            <ol class="more">
+                <li>Zapper Part 2</li>
+                <li>Wall Blaster</li>
+            </ol>
+            </a>
+        </div>
+
+        <br>
+        
+        <!--.playerHit()-->
+        
+        <div class="item"> <!--done-->
+            <a name="toggledraggable">
+            <h3>.toggleDraggable()</h3>
+            <p>The function .toggleDraggable() will change an object's draggability. In other words, if an object is draggable, .toggleDraggable() will make it undraggable. If an object is not draggable, .toggleDraggable() will make it draggable. .toggleDraggable() takes in no parameters.</p>
+            <pre><code>object.toggleDraggable();    
+//changes the draggability of 'object'</code></pre>
+           <h4>See Further:</h4>
+            <ol class="more">
+                <li>Ninja Supplies</li>
+            </ol>
+            </a>
+        </div>
+
+        <br>
+        
+        <div class="item"> <!--done-->
+            <a name="draggable">
+            <h3>.draggable()</h3>
+            <p>The function .draggable() sets whether or not an object is draggable. The function takes in one parameter, true or false, to set the draggability. The function can also return whether an object is draggable.</p>
+            <pre><code>object.draggable(true);    
+//makes 'object' draggable</code></pre>
+           <h4>See Further:</h4>
+            <ol class="more">
+                <li>Ninja Puzzle</li>
+            </ol>
+            </a>
+        </div>
+
+    </div>
+</body>
+</html>
