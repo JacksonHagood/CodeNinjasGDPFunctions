@@ -27,3 +27,5 @@ This is also a tool for Senseis to use
 when helping ninjas. Each location is
 welcome to make their own changes to the
 content.
+
+Images were made using Blender
