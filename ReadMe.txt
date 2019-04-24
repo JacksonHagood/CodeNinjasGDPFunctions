@@ -8,6 +8,11 @@ Each documented function contains a
 description, example(s), and further
 reference.
 
+Functions have been grouped by category,
+and each category is programmed as its
+own page. The pages have been setup to 
+link between themselves.
+
 Green Belt content will be added as the
 tool gets used more.
 
