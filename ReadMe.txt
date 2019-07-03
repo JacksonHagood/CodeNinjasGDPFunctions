@@ -1,6 +1,6 @@
 Code Ninjas | The Woodlands | Jackson Hagood
 
-Encyclopedia for all the pre-written
+Encyclopedia for all of the pre-written
 functions within the Game Development
 Platform (Currently up to Orange Belt).
 
